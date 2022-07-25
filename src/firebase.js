@@ -16,4 +16,4 @@ const firebaseConfig = {
   const db = firebaseApp.firestore();
   const auth = firebaseApp.auth();
 
-  export {db , auth};console.log("hlello")
+  export {db , auth};
