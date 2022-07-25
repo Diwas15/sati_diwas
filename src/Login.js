@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import './Login.css'
 import {Link} from 'react-router-dom'
-import {auth} from './firebase'
 
 function Login() {
 
@@ -14,13 +13,13 @@ function Login() {
         //firebase login work
     }
 
-    const register = e => {
-        e.preventDefault()
-        auth.createUserWithEmailAndPassword(email,password)
-        .then(auth => 
-            console.log(auth))
-        .catch(error => alert(error.message))
-    }
+    // const register = e => {
+    //     e.preventDefault()
+    //     auth.createUserWithEmailAndPassword(email,password)
+    //     .then(auth => 
+    //         console.log(auth))
+    //     .catch(error => alert(error.message))
+    // }
 
 
   return (
@@ -42,7 +41,7 @@ function Login() {
                use & sale. Please see our Privacy Notice, our Cookies Notice
                and our Interest Based Ad Notice.
             </p>
-            <button className='login__register' onClick={register}>Create Amaozon Account</button>
+            <button className='login__register' >Create Amaozon Account</button>
 
         </div>
     </div>
